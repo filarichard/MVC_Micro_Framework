@@ -1,0 +1,88 @@
+<!DOCTYPE>
+<html lang="cs">
+<head>
+    <title>MVC Micro Framework</title>
+    <meta name="author" content="Bc. Richard Fila">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="#" />
+</head>
+<style>
+    html {
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header a, .footer a {
+        color: #fff;
+        margin-left: 15px;
+        text-decoration: none;
+    }
+
+    .header a:hover {
+        color: #e6e6e6 !important;
+    }
+
+    .content-top div {
+        float: right;
+    }
+
+    .content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+
+    .content h2 {
+        margin-top: 0;
+        font-size: 2.2rem;
+        color: #0096d7 !important;
+    }
+
+    .content-top h1 {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+
+    .content-top h2, .gray h2 {
+        margin-top: 0;
+        font-size: 2.2rem;
+        color: #0096d7 !important;
+    }
+</style>
+
+<body>
+<div class="header row">
+    <div class="inner-header">
+        <a href="" class="logo">/mvc_micro_framework</a>
+    </div>
+</div>
+<div class="content">
+    <div class="content-top row" id="home">
+        <div class="content-top-right">
+            <h1>An error has occured</h1>
+            <h2>{exception}</h2>
+            <p>
+                {content}
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
