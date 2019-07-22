@@ -1,0 +1,19 @@
+{
+    "name": "filarichard/mvc_micro_framework",
+    "description": "Simple MVC Micro Framework",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\":"app",
+            "MVC\\": "mvc",
+            "EventDispatcher\\": "eventDispatcher"
+        }
+    },
+    "require": {
+        "illuminate/database": "^5.8",
+        "pimple/pimple": "^3.0",
+        "monolog/monolog": "^1.24",
+        "symfony/http-foundation": "^4.3"
+    }
+}
