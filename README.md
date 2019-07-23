@@ -10,7 +10,7 @@ mvc_micro_framework requires `PHP 7.1` or grater.
 1. Download
 
 **With Composer:**  
-`composer require mikecao/flight`
+`composer require filarichard/mvc_micro_framework`
 
 **Without Composer:**  
 Download files and extract them directly to web directory.
