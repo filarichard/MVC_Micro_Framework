@@ -30,8 +30,8 @@ class Dispatcher implements EventDispatcherInterface
     public function dispatch(object $event)
     {
         // kontrola jestli je zapnuta propagace
-        if (!$event->isPropagationStopped()) {
-            foreach ($this->listeners->getListenersForEvent($event) as $listener) {
+        foreach ($this->listeners->getListenersForEvent($event) as $listener) {
+            if (!$event->isPropagationStopped()) {
                 call_user_func($listener);
             }
         }
