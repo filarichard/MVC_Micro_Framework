@@ -64,7 +64,7 @@ class FrontController
     }
 
     // metoda pro pripravu parametru
-    public function prepareParams(\ReflectionMethod $method)
+    private function prepareParams(\ReflectionMethod $method)
     {
         // zjisti pozadovane parametry a pocet pozadovanych parametru
         $parameters = $method->getParameters();
