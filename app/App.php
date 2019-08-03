@@ -62,7 +62,7 @@ class App
         $template = new Template();
         $template->assignValue("exception", $e->getMessage());
         $template->assignValue("content", $e->getTraceAsString());
-        $template->render("vendor/filarichard/mvc_micro_framework/config/error.html", $status,true);
+        $template->render("vendor/filarichard/mvc_micro_framework/app/error.html", $status,true);
     }
 
     // priprava routeru, cest, requestu a DI kontejneru
