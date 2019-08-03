@@ -13,7 +13,7 @@ abstract class Controller
 
     // priprava view
     // zajisti aby view byla instance tridy Template
-    // uzivatel ale i presto muze promennou view nastavit jako jakykoliv soubor
+    // uzivatel ale i presto muze promennou view nastavit jako jakykoliv jiny soubor
     protected function setView()
     {
         $this->view = new Template();
